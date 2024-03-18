@@ -16,11 +16,10 @@ environ.Env.read_env()
 def get_local_ip():
     hostname = socket.gethostname()
     local_ip = socket.gethostbyname(hostname)
-    return local_ip
+    return str(local_ip)
 
 
 def main():
     reloader = hupper.start_reloader('config.main')
-
     print(f"Сервер запущен: http://{get_local_ip()}:{env('PORT')}")
-    serve(application, host=get_local_ip(), port=8080)
+    serve(application, host=get_local_ip(), port=env('PORT'))
