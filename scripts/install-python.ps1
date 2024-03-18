@@ -1,4 +1,4 @@
-$FileUri = "https://www.python.org/ftp/python/3.10.4/python-3.10.4-amd64.exe"
+$FileUri = "https://www.python.org/ftp/python/3.12.2/python-3.12.2-amd64.exe"
 $Destination = "python.exe"
 
 $bitsJobObj = Start-BitsTransfer $FileUri -Destination $Destination
