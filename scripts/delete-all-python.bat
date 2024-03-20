@@ -8,3 +8,4 @@ for /f "tokens=*" %%i in ('where python') do (
 )
 echo Все версии Python удалены.
 pause
+del C:\Users\Student\AppData\Local\Microsoft\WindowsApps\python.exe
